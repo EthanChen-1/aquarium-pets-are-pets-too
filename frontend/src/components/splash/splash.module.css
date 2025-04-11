@@ -1,0 +1,124 @@
+:root {
+  --heading-color: #fff;
+  --background-color: #90d5ff;
+}
+
+.splash {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: hidden;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+  background: transparent;
+}
+
+.splash h2 {
+  color: var(--heading-color);
+  font-size: 1.8rem;
+  line-height: 1.4;
+  background: inherit;
+}
+
+.splash svg {
+  background: inherit;
+}
+
+.bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  transform: translateZ(0);
+  overflow-y: hidden;
+  transition: 1s;
+  background: var(--background-color);
+}
+
+.bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  background: rgba(255, 255, 255, 0.25);
+  bottom: -100px;
+  animation: bubbling 20s infinite;
+  transition-timing-function: linear;
+  border-radius: 100%;
+}
+
+.bubbles li:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+}
+
+.bubbles li:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 2s;
+  animation-duration: 17s;
+}
+
+.bubbles li:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 60%;
+  animation-delay: 4s;
+  animation-duration: 17s;
+}
+
+.bubbles li:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  animation-delay: 1s;
+  animation-duration: 22s;
+}
+
+.bubbles li:nth-child(5) {
+  width: 45px;
+  height: 45px;
+  left: 50%;
+  animation-delay: 6s;
+  animation-duration: 12s;
+}
+
+@keyframes bubbling {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-1440px) rotate(630deg);
+    transform: translateY(-1440px) rotate(630deg);
+  }
+}
+
+@media (min-width: 40rem) {
+  .splash h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 48rem) {
+}
+
+@media (min-width: 64rem) {
+}
+
+@media (min-width: 80rem) {
+}
+
+@media (min-width: 96rem) {
+}

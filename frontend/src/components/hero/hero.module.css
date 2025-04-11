@@ -1,0 +1,35 @@
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  max-width: 900px;
+  line-height: 1.4;
+  font-family: "inter";
+  font-weight: normal;
+  padding: 1rem 1.5rem;
+}
+
+@media (min-width: 40rem) {
+}
+
+@media (min-width: 48rem) {
+  .hero h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 64rem) {
+}
+
+@media (min-width: 80rem) {
+}
+
+@media (min-width: 96rem) {
+}

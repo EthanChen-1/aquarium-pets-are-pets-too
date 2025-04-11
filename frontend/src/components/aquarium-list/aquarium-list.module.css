@@ -1,0 +1,21 @@
+:root {
+  --container-wide: 1400px;
+}
+
+.aquarium-list {
+  padding: 3rem 0 4rem;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aquarium-list-flex {
+  display: flex;
+  gap: 1rem;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
