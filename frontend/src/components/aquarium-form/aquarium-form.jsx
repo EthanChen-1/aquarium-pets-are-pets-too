@@ -25,7 +25,7 @@ export default function AquariumForm({ setAmount }) {
           min={1}
           max={100}
         />
-        <button type="submit">{isPending ? "Submitting..." : "Submit"}</button>
+        <button type="submit">{isPending ? "Adding..." : "Add"}</button>
       </form>
     </section>
   );

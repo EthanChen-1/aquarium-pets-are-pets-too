@@ -13,6 +13,7 @@
 
 .aquarium-list-flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   max-width: var(--container-wide);
   margin: 0 auto;

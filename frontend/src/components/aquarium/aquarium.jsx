@@ -21,6 +21,7 @@ export default function Aquarium() {
       <div>
         <h4>Feeding Schedule</h4>
         <form className={styles["aquarium-schedule-form"]}>
+          <div className={styles["form-group"]}></div>
           <div className={styles["form-group"]}>
             <label htmlFor="monday">Monday</label>
             <input id="monday" name="monday" type="checkbox" />
