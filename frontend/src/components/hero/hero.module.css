@@ -1,8 +1,14 @@
+:root {
+  --background-color: #90d5ff;
+  --font-color: #fff;
+}
+
 .hero {
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--font-color);
   background: transparent;
 }
 
@@ -12,8 +18,99 @@
   max-width: 900px;
   line-height: 1.4;
   font-family: "inter";
-  font-weight: normal;
+  font-weight: 300;
   padding: 1rem 1.5rem;
+  background: inherit;
+  animation: floating 10s infinite;
+  transition-timing-function: linear;
+}
+
+.bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  transform: translateZ(0);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 1s;
+  background: var(--background-color);
+}
+
+.bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  background: rgba(255, 255, 255, 0.25);
+  bottom: -100px;
+  animation: bubbling 20s infinite;
+  transition-timing-function: linear;
+  border-radius: 100%;
+}
+
+.bubbles li:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+}
+
+.bubbles li:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 2s;
+  animation-duration: 17s;
+}
+
+.bubbles li:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 60%;
+  animation-delay: 4s;
+  animation-duration: 17s;
+}
+
+.bubbles li:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  animation-delay: 1s;
+  animation-duration: 22s;
+}
+
+.bubbles li:nth-child(5) {
+  width: 45px;
+  height: 45px;
+  left: 50%;
+  animation-delay: 6s;
+  animation-duration: 12s;
+}
+
+@keyframes bubbling {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+  }
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
 }
 
 @media (min-width: 40rem) {

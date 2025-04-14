@@ -40,6 +40,7 @@
   z-index: 5;
   transform: translateZ(0);
   overflow-y: hidden;
+  overflow-x: hidden;
   transition: 1s;
   background: var(--background-color);
 }
@@ -100,8 +101,8 @@
   }
 
   100% {
-    -webkit-transform: translateY(-1440px) rotate(630deg);
-    transform: translateY(-1440px) rotate(630deg);
+    -webkit-transform: translateY(-1440px);
+    transform: translateY(-1440px);
   }
 }
 

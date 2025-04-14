@@ -1,0 +1,29 @@
+:root {
+  --container-small: 900px;
+  --background-color: #90d5ff;
+  --font-color: #fff;
+}
+
+.cta {
+  padding: 3rem 0 4rem;
+}
+
+.cta-flex {
+  display: flex;
+  max-width: var(--container-small);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cta button {
+  background: var(--background-color);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
