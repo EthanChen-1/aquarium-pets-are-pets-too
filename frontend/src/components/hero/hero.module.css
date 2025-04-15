@@ -3,11 +3,11 @@
   --font-color: #fff;
 }
 
-.hero {
-  height: 500px;
+.hero-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 500px;
   color: var(--font-color);
   background: transparent;
 }
@@ -26,7 +26,7 @@
 }
 
 .bubbles {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
